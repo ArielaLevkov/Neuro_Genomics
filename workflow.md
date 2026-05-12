@@ -1,7 +1,10 @@
 # Neuro-Genomics Final Project Workflow (Google Colab)
 
 ## Required input files
-Place your input data files in a folder such as `data/` in Colab runtime (or Google Drive mounted path):
+The notebook now downloads required files automatically from this public Google Drive folder:
+`https://drive.google.com/drive/folders/1ZP0T8l5Qx1TJ5iihL9xCSKmbEc0MdC3r?usp=drive_link`
+
+If files already exist locally in `Data/`, the notebook reuses them. Otherwise it downloads them into `Data/`.
 
 - Bulk RNA-seq counts file (placeholder used in notebook): `bulk_counts_matrix.csv`
 - `expression_matrix.csv`
@@ -13,7 +16,7 @@ If your file names differ, update the path variables in the notebook.
 ## How to run in Google Colab
 1. Open `notebooks/final_project.ipynb` in Colab.
 2. Upload this repository (or clone it into Colab).
-3. Upload input CSV files to the expected folder (`data/`) or edit the notebook paths.
+3. Run the setup cell; it fetches missing files from the shared Google Drive folder into `Data/`.
 4. Run cells top-to-bottom.
 5. The notebook installs Python packages, R, and DESeq2 inside Colab. No local R installation is required.
 
